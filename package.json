@@ -1,0 +1,38 @@
+{
+	"name": "knx-dpt-parser",
+	"description": "knx-dpt-parser is a generic parser for any knx bus telegrams",
+	"version": "1.0.0",
+	"main": "Decoder.js",
+	"scripts": {
+		"start": "node testsingletelegrams.js"
+	},
+	"dependencies": {
+		"xml2js": "latest"
+	},
+	"devDependencies": {
+		"eibd": "^0.3.7"
+	},
+	"engines": {
+		"node": ">6.0.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/snowdd1/knx-dpt-parser.git"
+	},
+	"author": {
+		"name": "Raoul",
+		"e-mail": "<snowdd1.theelk@xoxy.net>",
+		"url": "https://github.com/snowdd1"
+	},
+	"license": "GPL-2.0",
+	"contributors": [],
+	"bugs": {
+		"url": "https://github.com/snowdd1/knx-dpt-parser/issues"
+	},
+	"keywords": [
+		"KNX",
+		"knxd",
+		"eibd",
+		"EIB"
+	]
+}
