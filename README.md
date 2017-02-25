@@ -32,13 +32,13 @@ All format child objects contain a value field, containing the numeric value of 
 
 Example for a simple DPT1.001 telegram: 
 
-```json
+```
 {'0': { value: 1, interpretation: 'True' }, TypeText: 'boolean', subitems: 1, value: 1 }
 ``` 
 The last value field is available in the `convenienceDecode()` only.  
 
 A sample of a date DPT11.001, also by `convenienceDecode()` to get the combined value field:  
-```json
+```
  { '0': { value: null, interpretation: 'reserved' },
   '1': { value: 25, Unit: 'Day of month' },
   '2': { value: null, interpretation: 'reserved' },
@@ -56,7 +56,7 @@ A sample of time DPT10.001
  
 Enumerative types (such as HVAC control mode DPT20.102) have the text of the mode in 'interpretation'.
 
-```json
+```
 { '0': { value: 3, interpretation: 'Economy', Name: 'HVACMode' },
   TypeText: 'HVAC mode',
   DPT: 'DPST-20-102',
