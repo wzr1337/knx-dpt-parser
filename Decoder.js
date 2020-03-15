@@ -5,10 +5,8 @@
 
 'use strict';
 
-
-// TODO: check for file first 
-
-let raw_types = JSON.parse(require('fs').readFileSync('knxmaster.json', 'utf-8'));
+const knxmaster = require('path').join(__dirname, 'knxmaster.json');
+let raw_types = JSON.parse(require('fs').readFileSync(knxmaster), 'utf-8');
 
 //console.dir(raw_types);
 
